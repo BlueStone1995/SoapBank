@@ -105,7 +105,7 @@ public class BankWS {
      *     <SOAP-ENV:Header/>
      *     <S:Body>
      *         <ns2:deleteAccount xmlns:ns2="http://java.main/">
-     *         	<id>1</id>
+     *         	<id>1111111111</id>
      *         </ns2:deleteAccount>
      *     </S:Body>
      * </S:Envelope>

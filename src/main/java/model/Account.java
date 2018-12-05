@@ -8,7 +8,7 @@ public class Account {
     @Id
     @Column(length = 11)
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String numAccount;
+    private int numAccount;
 
     @Column(nullable = false)
     private String libelle;
@@ -29,7 +29,7 @@ public class Account {
     public Account() {
     }
 
-    public Account(String numAccount, String libelle, String IBAN, int solde, BankBranch agence) {
+    public Account(int numAccount, String libelle, String IBAN, int solde, BankBranch agence) {
         this.numAccount = numAccount;
         this.libelle = libelle;
         this.IBAN = IBAN;
@@ -40,11 +40,11 @@ public class Account {
     /**
      * Getters and Setters
      */
-    public String getNumAccount() {
+    public int getNumAccount() {
         return numAccount;
     }
 
-    public void setNumAccount(String numAccount) {
+    public void setNumAccount(int numAccount) {
         this.numAccount = numAccount;
     }
 

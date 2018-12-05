@@ -33,7 +33,7 @@ public class AccountController {
         return account.toString();
     }
 
-    public String addAccount(String numAccount, String libelle, String IBAN, double solde, String agence) {
+    public String addAccount(int numAccount, String libelle, String IBAN, double solde, String agence) {
         Account account = new Account();
 
         account.setNumAccount(numAccount);
@@ -47,7 +47,7 @@ public class AccountController {
         return account.toString();
     }
 
-    public String editAccount(String numAccount, String libelle, String IBAN, double solde, String agence) {
+    public String editAccount(int numAccount, String libelle, String IBAN, double solde, String agence) {
         Account account = new Account();
 
         account.setNumAccount(numAccount);
